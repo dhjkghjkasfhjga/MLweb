@@ -269,12 +269,14 @@ body, html {
   }
   return "";
 }
+
  document.getElementById("submiter").addEventListener("click", function (){
     console.log("got click")
     document.cookie = "imageident"+"="+document.getElementById("Email").value
     console.log("cookie with value of:" + document.cookie)
+    window.location.assign("imagerecognizer.html")
  })
- window.location.assign("imagerecognizer.html")
+
 
  </script>
 <script>
